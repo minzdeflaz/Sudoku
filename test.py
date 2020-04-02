@@ -1,2 +1,2 @@
-from random import sample,randint
-print(sample(range(1,10),9))
+a={(1,0):3,(2,0):4}
+print(a)

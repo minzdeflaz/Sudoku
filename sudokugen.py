@@ -100,12 +100,22 @@ def sudoku_gen(board=[["-","-","-","-","-","-","-","-","-"],["-","-","-","-","-"
     nlist=[1,2,3,4,5,6,7,8,9]
     shuffle(nlist)
     solve_sudoku(board,0,0,nlist)
+    winboard=board.copy()
+    for i in range(9):
+        winboard[i]=board[i].copy()
     for row in range(0,9):
         space=sample(range(0,9),randint(5,6))
         for col in range(0,9):
             if col in space:
-                board[row][col]='-'
-    return board
+                board[row][col]='-'              
+    return board,winboard
+def check_board(board,winboard):
+    wrong=[]
+    for i in range(9):
+        for j in range(9):
+            if board[i][j]!=winboard[i][j]:
+                wrong.append((board[i][j],i,j))
+    return wrong
 def locked_tab(board):
     const=[]
     for i in range (0,9):
@@ -133,6 +143,10 @@ def solve_sudoku(board,row,col,listt=[1,2,3,4,5,6,7,8,9]):
 if __name__=="__main__":
 
     const=[]
-    board=sudoku_gen()
+    board,winboard=sudoku_gen()
+    for i in board:
+        print(i)
+    print("\n")
+    solve_sudoku(board,0,0)
     for i in board:
         print(i)
