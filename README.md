@@ -15,3 +15,4 @@ Each time you start the game, a completely new and random puzzle will be generat
 - [ ] Add scoreboard
 - [ ] Add high scores board
 - [ ] Improve "Check" algorithm
+- [x] Improve code format
