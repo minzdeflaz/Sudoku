@@ -5,9 +5,9 @@ Welcome to Sudoku Game v0.1
 
 You can find sudoku rules [here](https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/).
 
-Press "Check" button to see your progress.
-Press "Solve" to get the solution.
-Each time you start the game, a completely new and random puzzle will be generated.
+Press "Check" button to see your progress.<br />
+Press "Solve" to get the solution.<br />
+Each time you start the game, a completely new and random puzzle will be generated.<br />
 
 # Future plans
 - [ ] Improve UI
