@@ -6,9 +6,6 @@ if __name__=="__main__":
     root= Tk()
     root.title("Sudoku")
     board,winboard=sudoku_gen()
-    for k in winboard:
-            print(k)
-    print('\n')
     label1=Label(root,text="Sudoku",font="Arial 20 italic",pady=7)
     label1.pack()
     frame=Frame(root)
